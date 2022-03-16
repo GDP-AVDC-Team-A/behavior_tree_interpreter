@@ -1,0 +1,45 @@
+<launch>
+
+ <!-- master tag is only obeyed in the top-level file (not in includes) 
+    <master>
+    </master>-->
+    	<arg name="robot_namespace" default="drone1" />
+ 
+        <arg name="check_behavior_format_srv" default="check_behavior_format" />
+        <arg name="window_event_topic" default="window_event" />
+        <arg name="my_stack_directory"                 default="$(env AEROSTACK_STACK)" />
+        <arg name="mission_configuration_folder" default="$(env AEROSTACK_STACK)/configs/drone1" />
+		<arg name="behavior_tree_execute_topic"        default="BehaviorTreeExecute" />
+   	<arg name="catalog_path" default="${env AEROSTACK_PROJECT}/configs/mission/behavior_catalog.yaml" />
+        <!-- Sensor - telemetry_state_receiver -->
+            <arg name="drone_driver_sensor_battery" default="battery" />
+
+        <!--Behavior_trees-->
+          <arg name="behavior_event" default="behavior_activation_finished"/>
+          <arg name="activate_behavior" default="request_behavior_activation"/>
+          <arg name="cancel_behavior" default="request_behavior_deactivation"/>
+          <arg name="initiate_behaviors" default="initiate_behaviors"/>
+          <arg name="add_belief" default="add_belief"/>
+
+    <group ns="$(arg robot_namespace)">
+        <param name="~robot_namespace" value="$(arg robot_namespace)" />
+
+        <param name="my_stack_directory"     value="$(arg my_stack_directory)"    type="str" />
+        <param name="~mission_configuration_folder" value="$(arg mission_configuration_folder)" />
+        <param name="~catalog_path" value="$(arg catalog_path)" />
+        <!-- Topic Name ROS Params  -->
+            <!-- Sensor - telemetry_state_receiver -->
+                <param name="drone_driver_sensor_battery" value="$(arg drone_driver_sensor_battery)"/>        
+
+            <!--Behavior trees-->
+            <param name="topic_behavior_completed" value="$(arg behavior_event)" />
+            <param name="~activate_behavior" value="$(arg activate_behavior)" />
+            <param name="~cancel_behavior" value="$(arg cancel_behavior)" />
+            <param name="initiate_behaviors" value="$(arg initiate_behaviors)" />
+            <param name="~add_belief" value="$(arg add_belief)" />
+            <param name="window_event_topic" value="$(arg window_event_topic)" />
+	    <!-- topics & services -->
+    	    <param name="~behavior_tree_execute_topic" value="$(arg behavior_tree_execute_topic)" type="str" />
+    	    <node name="behavior_tree_interpreter_process" pkg="behavior_tree_interpreter" type="behavior_tree_interpreter" output="screen"/>
+    </group>
+</launch>

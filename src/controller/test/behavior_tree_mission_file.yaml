@@ -1,0 +1,42 @@
+nodes:
+  - id: 1
+    node_name: test
+    node_type: SEQUENCE
+    behavior_type: LAND
+    arguments: ""
+    is_recurrent: true
+    activate: true
+    parent: 0
+  - id: 2
+    node_name: TAKE OFF
+    node_type: BEHAVIOR
+    behavior_type: TAKE_OFF
+    arguments: ""
+    is_recurrent: false
+    activate: false
+    parent: 1
+  - id: 3
+    node_name: GO TO POINT A
+    node_type: BEHAVIOR
+    behavior_type: GO_TO_POINT
+    arguments: "coordinates: [1, 2, 0.5]"
+    is_recurrent: false
+    activate: false
+    parent: 1
+  - id: 4
+    node_name: GO TO POINT B
+    node_type: BEHAVIOR
+    behavior_type: GO_TO_POINT
+    arguments: "coordinates: [3, 2, 0.5]"
+    is_recurrent: false
+    activate: false
+    parent: 1
+  - id: 5
+    node_name: LAND
+    node_type: BEHAVIOR
+    behavior_type: LAND
+    arguments: ""
+    is_recurrent: false
+    activate: false
+    parent: 1
+variables: "  "

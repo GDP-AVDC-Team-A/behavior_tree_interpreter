@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <name>behavior_tree_interpreter</name>
+  <version>3.0.0</version>
+  <description>The behavior tree interpreter package</description>
+
+  <maintainer email="daniel.olmore@gmail.com">Daniel Del Olmo</maintainer>
+  <author>Daniel Del Olmo Orejana</author>
+  <license>BSD-3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>libqt4-dev</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>droneMsgsROS</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>genmsg</build_depend>
+  <build_depend>angles</build_depend>
+  <build_depend>lib_pugixml</build_depend>
+  <build_depend>aerostack_msgs</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <run_depend>aerostack_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>libqt4-dev</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>droneMsgsROS</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>angles</run_depend>
+  <run_depend>lib_pugixml</run_depend>
+  <run_depend>yaml-cpp</run_depend>
+  <build_depend>message_generation</build_depend>
+</package>
+

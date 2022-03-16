@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BehaviorDialog</class>
+ <widget class="QWidget" name="BehaviorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>608</width>
+    <height>1095</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Node Editor</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="1">
+    <layout class="QGridLayout" name="layout">
+     <item row="3" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="ruf_argument_one">
+       <property name="text">
+        <string>Max. frequency (Hz):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" alignment="Qt::AlignTop">
+      <widget class="QLineEdit" name="name_content">
+       <property name="minimumSize">
+        <size>
+         <width>302</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2" alignment="Qt::AlignTop">
+      <widget class="QTextEdit" name="add_belief_content">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>478</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" alignment="Qt::AlignTop">
+      <widget class="QComboBox" name="node_type_combobox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>302</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>ADD BELIEF</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BEHAVIOR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>QUERY</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SEQUENCE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PARALLEL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>REPEATER</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>REMOVE BELIEF</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>REPEAT UNTIL FAIL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SUCCEEDER</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>INVERTER</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SELECTOR</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="1" alignment="Qt::AlignLeft|Qt::AlignTop">
+      <widget class="QSpinBox" name="parallel_argument_content_one">
+       <property name="minimumSize">
+        <size>
+         <width>48</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="value">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0" colspan="2" alignment="Qt::AlignTop">
+      <widget class="QTextEdit" name="behavior_content">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>478</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0" colspan="2">
+      <widget class="QTextEdit" name="query_content">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>478</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" alignment="Qt::AlignLeft|Qt::AlignTop">
+      <widget class="QSpinBox" name="repeater_argument_one_content">
+       <property name="minimumSize">
+        <size>
+         <width>48</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="value">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="behavior_mode_combobox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>302</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>EXECUTE BEHAVIOR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ACTIVATE BEHAVIOR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DEACTIVATE BEHAVIOR</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="behavior_combobox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>302</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="repeater_argument_one_label">
+       <property name="text">
+        <string>Number of times:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" alignment="Qt::AlignLeft|Qt::AlignTop">
+      <widget class="QDoubleSpinBox" name="ruf_argument_content_one">
+       <property name="minimumSize">
+        <size>
+         <width>69</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="value">
+        <double>0.500000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0" colspan="6">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="4" alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="accept_button">
+         <property name="text">
+          <string>Accept</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="5" alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="cancel_button">
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>22</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="behavior_label">
+       <property name="text">
+        <string>Behavior:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="mode_label">
+       <property name="text">
+        <string>Mode:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="arguments_label">
+       <property name="text">
+        <string>Arguments:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="parallel_argument_one">
+       <property name="text">
+        <string>Success (nodes):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="type_label">
+       <property name="text">
+        <string>Node type:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="name_label">
+       <property name="text">
+        <string>Node name: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0" colspan="2">
+      <widget class="QTextEdit" name="remove_belief_content">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>478</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>15</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

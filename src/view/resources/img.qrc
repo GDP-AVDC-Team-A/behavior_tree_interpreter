@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/camera_viewer.png</file>
+        <file>img/configuration.png</file>
+        <file>img/control.png</file>
+        <file>img/edit_environment.png</file>
+        <file>img/environment_viewer.png</file>
+        <file>img/execution_viewer.png</file>
+        <file>img/eye.png</file>
+        <file>img/first_person_viewer.png</file>
+        <file>img/mission_tree.png</file>
+        <file>img/parameters_viewer.png</file>
+        <file>img/python_control.png</file>
+        <file>img/state_viewer.png</file>
+        <file>img/tml_control.png</file>
+        <file>img/tree_control.png</file>
+        <file>img/vehicle_dynamics.png</file>
+        <file>img/task.png</file>
+        <file>img/task0.png</file>
+        <file>img/taskOff.png</file>
+        <file>img/tick.png</file>
+        <file>img/logo.png</file>
+        <file>img/keyboard_control.png</file>
+        <file>img/drone-icon.png</file>
+        <file>img/shell_interface.png</file>
+        <file>img/import_mission.png</file>
+        <file>img/pause.png</file>
+        <file>img/play.png</file>
+        <file>img/gamepad.png</file>
+        <file>img/videogame.png</file>
+        <file>img/videogame2.png</file>
+    </qresource>
+</RCC>
